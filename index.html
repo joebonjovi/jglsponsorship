@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+	
+    <head>
+<script>
+function modal(){
+if(document.getElementById('name', 'email', 'phone', 'pageviews', 'promote', 'choice', 'url').value != ""){
+alert('Thank you for taking the time to apply!');   
+}
+}
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0 height=device-height">
+		
+<style>
+.sa input{
+margin: 25px;
+padding: 10px;
+margin-left:  40px;
+
+
+
+    }
+
+    .fullapp{
+width: 100%;
+background: linear-gradient(to right, blue, skyblue);
+margin-left: 715px;
+padding: 45px;
+max-width: 360px;
+margin: 0 auto;
+border: solid 5px darkblue;
+margin-top: 200px;
+
+
+    }
+
+    body{
+background-color: cornflowerblue;
+
+    }
+
+    .logo{
+        border-radius: 100px;
+        margin-left: 120px;
+       margin-top: -260px;
+       border: solid 3px cyan;
+    }
+
+    .label{
+margin-left: 25px;
+
+    }
+
+	.sub{
+	width: 100px;
+	border-radius: 12px;
+	border: solid white 2px
+	}
+    
+	.fillout input{
+	max-width: 250px;
+	min-width: 250px;
+	width: 100%;
+	border: solid 3px green;
+        margin-left: 50px
+	}
+	
+</style>
+		
+    </head>
+
+    <body style="font-family: Arial;">
+       
+        <div class="fullapp">
+            <img class="logo" style="height: 100px; width: 100px;" src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/139733394/original/e0bb457438c7f7beb4f4d74555cb1845d9f9ac8d/3d-print-a-custom-3d-print.jpeg">
+        <form class="sa" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSexmL6ol8I8_lcqFbe1yg_qRe07uINJ4VseY7o8AXDGaQ1oeQ/formResponse" onsubmit="modal()">
+			<h2 style="color: yellow;">Sponsorship Application</h2>   
+            <br>
+            <echo style="font-family: sans-serif; font-size: small;">If we think you are a good canidate for <em><strong>sponsorship</strong></em> we will email you back in the next 24 hours.</echo>
+            <div class="fillout">
+		<input type="text" placeholder="Name" required name="entry.1411040461" id="name">
+        <input type="text" placeholder="Email" required name="entry.1515746755" id="email">
+		<input type="text" placeholder="Phone" required name="entry.1359678992" id="phone">
+        <input type="text" placeholder="Company name (optional)" name="entry.1781382627" id="cname">
+        <input type="number" placeholder="Your Monthly Page views" required name="entry.12482739" id="pageviews">
+        <input type="text" placeholder="How will you promote us?" required name="entry.515898261" id="promote">
+
+				<label for="canidate" style="font-size: 15px;">Why do you think you are a good choice for sponsorship?</label>
+		<input type="text" placeholder="Your Answer" id="canidate" required name="entry.2066900732" id="choice">
+        <div class="label">
+        <label for="URL" style="font-size: medium;"><strong>Website/Social Media URLs:</strong></label>
+        <br>
+			<echo style="font-size: small;"><em>Such as Youtube, Instagram...</em></echo>
+        </div>
+        <input type="text" id="URL" placeholder="Paste URL Here" required name="entry.2145637192" id="url">
+				</div>
+        <input class="sub" type="submit" style="background-color: lightcoral; margin-left: 125px;">
+        </form>
+	</div>
+	
+ </body>
+</html>
